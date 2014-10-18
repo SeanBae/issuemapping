@@ -1,0 +1,46 @@
+
+html, 
+body, 
+#map-canvas {
+    height: 80%;
+    margin: 20px;
+    padding: 0px
+}
+#map-canvas {
+	border: 1px black solid;
+}
+h2 {
+	text-align: center;
+}
+
+#masterview {
+	margin: 20px;
+	background-color: #BBB;
+	border: 1px #1b1b1b solid;
+}
+
+#masterview * {
+	padding-right: 5px;
+	padding-top: 2px;
+	text-align: right;
+}
+#complaintlist {
+	margin: 20px;
+	border: 1px #1b1b1b solid;
+	padding: 0;
+	background-color: #BBB;
+}
+#complaintlist p {
+	text-align: left;
+	border-bottom: 1px #DDD solid;
+	padding: 5px;
+	margin: 0px;
+	cursor: pointer;
+}
+#complaintlist p:hover {
+	background-color: #777;
+	color: white;
+}
+#textinfo p {
+	text-align: left;
+}

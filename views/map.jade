@@ -1,0 +1,40 @@
+extends layout
+
+block head
+    title Map of Complaints
+    link(rel='stylesheet', href='/stylesheets/maps.css')
+block content
+
+    h2 Map of Complaints
+    h6 
+        a(href='#', onclick='logout();') Log out?
+    #map-canvas
+    .container
+        .row
+            #complaint-list.col-md-6
+                ul#complaintlist
+            #complaint-detail.col-md-6
+                #masterview
+                    .row
+                        #textheader.col-md-3
+                            p Date
+                            p Phone #
+                            p Message
+                        #textinfo.col-md-9
+                            p#date
+                            p#phone
+                            p#message
+        #disqus_thread
+            script.
+                var disqus_shortname = 'issuemap';
+
+                (function() {
+                    var dsq = document.createElement('script');
+                    dsq.type = 'text/javascript';
+                    dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+    script(src='https://cdn.firebase.com/js/client/1.1.1/firebase.js')
+    script(src="https://maps.googleapis.com/maps/api/js?v=3.exp")
+    script(src='/javascripts/googlemapszhang.js')

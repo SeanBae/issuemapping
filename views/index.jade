@@ -1,0 +1,37 @@
+extends layout
+block head
+  link(rel='stylesheet', href='/stylesheets/login.css')
+block content
+
+  //WRAPPER
+  #wrapper
+    h1#titletext Bangladesh Worker Complaint System
+
+    // ADD USER
+    #login
+      article.glass
+        fieldset
+          h2 Login
+          input#inputFullNameLogin(type='text', placeholder='Full Name')
+          br
+          input#inputPasswordLogin(type='password', placeholder='Password')
+          br
+          button#btnLogin Login
+    // /ADD USER
+
+    // LOGIN
+    #addUser
+      fieldset
+        h2 Register
+        input#inputHashkey(type='text', placeholder='Hashkey')
+        br
+        input#inputFullName(type='text', placeholder='Full Name')
+        br
+        input#inputPhone(type='text', placeholder='Phone')
+        br
+        input#inputPassword(type='password', placeholder='Choose a Password')
+        br
+        button#btnAddUser Register
+    // /LOGIN
+  // /WRAPPER
+  script(src='/javascripts/login.js')
