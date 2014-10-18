@@ -1,4 +1,4 @@
-issuemapping
+IssueMapping
 ============
 
 HackTheChange 2014
