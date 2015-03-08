@@ -43,7 +43,7 @@ router.get('/register', function(req, res) {
  */
 router.post('/adduser/:hashkey', function(req, res) {
     var db = req.db;
-	db.collection('hashkeylist').find({key: Number(req.body.hashkey)}).toArray(function (err, items) {
+	db.collection('hashkeylist').find({key: String(req.body.hashkey)}).toArray(function (err, items) {
 	    console.log(items);
 	    if(items.length != 0) {
 	    	//it is a valid, unused hashkey
